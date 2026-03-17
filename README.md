@@ -30,7 +30,7 @@
 
 | 날짜 | 주제 | 링크 |
 |------|------|------|
-| 2026-03-17 | WebSquare + Spring + MyBatis 연동 및 DB 설계 | [📄 보기](2026/03/2026-03-17_WebSquare_Spring_MyBatis_연동_및_DB설계.md) |
+| 2026-03-17 | WebSquare + Spring + MyBatis 연동 및 DB 설계 | [📄 보기](https://github.com/kmc77/withinfo/blob/main/TIL/2026/03/2026-03-17_WebSquare_Spring_MyBatis_연동_및_DB설계.md) |
 
 ---
 
