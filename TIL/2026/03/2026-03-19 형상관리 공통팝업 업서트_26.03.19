@@ -1,0 +1,154 @@
+# 2026-03-19 TIL
+
+## 오늘 작업한 것들
+
+---
+
+## 1. GitHub 형상관리 세팅
+
+### 레포 생성 및 브랜치 전략
+- Organization: `withinfo3-19`
+- Repository: `wrm-guarantee` (Private)
+- 브랜치 전략:
+  - `main` - 최종 통합
+  - `kmc77` - 개인 작업 브랜치
+  - `page/Loan_apply`, `page/Loan_approve`, `page/Loan_eval`, `page_Userinfo` - 페이지별 브랜치
+
+### .gitignore 설정
+```
+/.metadata/
+**/target/
+**/*.class
+Servers/
+websquare_home/
+WRM/WebContent/websquare/_websquare_/
+KMS/
+WRE/
+.svn/
+```
+
+> **핵심**: `.metadata/`는 Eclipse 설정 파일, `_websquare_/`는 WebSquare 프레임워크 파일이라 올리면 안 됨
+
+### Git 초기 세팅 순서
+```bash
+cd C:\WEBSQUARE_DEV_PACK_SP5\workspace
+git init
+git config --global user.email "이메일"
+git config --global user.name "아이디"
+git remote add origin https://github.com/withinfo3-19/wrm-guarantee.git
+git fetch origin
+git checkout kmc77
+git add WRM/
+git commit -m "WRM 프로젝트 추가"
+git push origin kmc77
+```
+
+### 브랜치 전환 시 주의사항
+- 브랜치 전환 전 uncommitted 변경사항 있으면 `Stash` 처리
+- `git checkout` 시 `.project` 파일 등 프로젝트 설정 파일이 브랜치마다 다를 수 있음
+- EGit(Eclipse Git 플러그인)으로 IDE 내에서 브랜치 전환 가능: `Git Repositories` 패널 → `Local` → 브랜치 우클릭 → `Switch To`
+
+---
+
+## 2. 공통 팝업 개발 (고객정보 팝업)
+
+### 팝업 타이틀 동적 세팅
+호출하는 화면마다 팝업 제목이 달라야 하는 경우, `openPopup` 시 `opt.popupName`으로 전달
+
+```javascript
+// 호출하는 화면
+var opt = {
+    id: "H3P03",
+    popupName: "고객정보",  // 화면마다 다르게
+    width: "1200", height: "1220"
+};
+com.win.openPopup("/ui/SP/Common/Common_Popup01.xml", opt, data);
+```
+
+```xml
+<!-- 팝업 XML - ref로 바인딩 -->
+<w2:textbox id="titleTextbox" ref="data:opt.popupName" tagname="h3"></w2:textbox>
+```
+
+> **핵심**: WebSquare는 `id`가 아닌 `ref`로 데이터 바인딩. `id="opt.popupName"` 은 바인딩 아님
+
+### 그리드 스크롤 처리
+데이터가 늘어나도 팝업이 늘어나지 않고 그리드 안에서 스크롤 생기게 하려면:
+```xml
+<!-- visibleRowNum="all" 제거하고 숫자로 고정 -->
+<w2:gridView style="height:354px;" visibleRowNum="10">
+```
+
+### 고객정보 팝업 - 그리드/상세 구분
+회의 내용 기반으로 정리:
+
+**그리드 (기본 노출)**
+- `USER_ID` 고객코드
+- `USER_NM` 이름
+- `RRN_NO` 주민번호 (마스킹)
+- `BIRTH_DT` 생년월일
+
+**더블클릭 시 상세**
+- `TEL_NO` 전화번호
+- `ZIP_CD` / `ADDRESS1` / `ADDRESS2` 주소
+- `USER_TYPE` 고객구분
+- `MARRY_DT` 결혼날짜
+- `CHILD_CNT` 자녀수
+
+> 근거: "고객 코드, 이름, 주민번호, 생년월일 등 핵심 정보만 고정해서 보여줘야 함", "우편번호, 주소, 결혼 여부, 자녀 수 등은 클릭 시 상세에서 확인"
+
+---
+
+## 3. 보증 신청 업서트 로직 관련
+
+### 회의 내용 정리
+업서트(있으면 UPDATE, 없으면 INSERT) 관련 두 가지 케이스를 구분해야 함:
+
+| 케이스 | 처리 방식 |
+|--------|-----------|
+| 신청하기 버튼 중복 클릭 | 이미 신청됐다는 알럿 표시 후 차단 |
+| 승인 거절 후 재신청 | 기존 데이터 화면에 바인딩만, 저장 시 **새 INSERT** (새 신청번호 채번) |
+
+### 머지문 vs 프로그램 내 if/else
+- **실무에서는 머지문보다 프로그램 내 로직 선호**
+- 이유: 병합성(동시성) 문제 발생 가능성
+```java
+// 권장 방식
+List result = selectById(id); // 먼저 조회
+if (result.size() > 0) {
+    update(...);
+} else {
+    insert(...);
+}
+```
+
+---
+
+## 4. 트러블슈팅: Tomcat 서버 기동 실패
+
+### 증상
+```
+ClassNotFoundException: websquare.http.controller.JavascriptInitializer
+ClassNotFoundException: org.springframework.web.context.ContextLoaderListener
+```
+
+### 원인
+- Maven 로컬 저장소(`.m2`)가 없어 jar 파일 미다운로드
+- `pom.xml`에 수동 등록 라이브러리(`websquare` jar) 포함되어 있어 중앙 저장소에서 받아올 수 없음
+
+### 해결
+WebSquare 라이선스 만료 문제가 추가로 발견됨:
+```
+License expired. Purchase additional License.
+Expiration : Sun Jun 30 00:00:00 KST 2024
+```
+→ 선임/관리자에게 라이선스 갱신 요청 필요
+
+---
+
+## 오늘의 핵심 정리
+
+1. **Git 브랜치 전환 시** 프로젝트 설정 파일이 영향받을 수 있음 → 전환 전 반드시 커밋 또는 stash
+2. **WebSquare 바인딩**은 `id` 아닌 `ref` 속성 사용
+3. **업서트 로직**은 케이스별 구분 필요 (중복클릭 차단 vs 재신청 새 INSERT)
+4. **gitignore** 설정은 최초 push 전에 반드시 완료
