@@ -1,4 +1,4 @@
-# 2026-03-25_Eclipse m2e 플러그인 복구 및 Deployment Assembly 설정
+# 2026-03-24_Eclipse m2e 플러그인 복구 및 Deployment Assembly 설정
 
 ## 📌 카테고리
 - 트러블슈팅 — Eclipse / Maven / WebSquare Studio
