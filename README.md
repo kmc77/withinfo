@@ -22,6 +22,7 @@
 | 2026-03-17 | WebSquare + Spring + MyBatis 연동 및 DB 설계 | [📄 보기](https://github.com/kmc77/withinfo/blob/main/TIL/2026/03/2026-03-17_WebSquare_Spring_MyBatis_연동_및_DB설계.md) |
 | 2026-03-23 | 공통 팝업 검색 개선 및 바깥 화면 데이터 바인딩 | [📄 보기](링크) |
 | 2026-03-24 | Eclipse m2e 플러그인 복구 및 Deployment Assembly 설정 | [📄 보기](https://github.com/kmc77/withinfo/blob/main/TIL/2026/03/2026-03-24_Eclipse_Maven_m2e_플러그인_복구_및_배포설정.md) |
+| 2026-03-25 | WebSquare 중첩 탭 문제 해결 및 이관·수관 기능 구현 | [📄 보기](https://github.com/kmc77/withinfo/blob/main/TIL/2026/03/2026-03-25_WebSquare_중첩탭_이관수관_기능구현.md) |
 ---
 ## 📂 폴더 구조
 ```
@@ -33,6 +34,7 @@ TIL
         └── 2026-03-19_형상관리 공통팝업 업서트.md
         └── 2026-03-23_공통 팝업 검색 개선 및 바깥 화면 데이터 바인딩.md
         └── 2026-03-24_Eclipse_Maven_m2e_플러그인_복구_및_배포설정.md
+        └── 2026-03-25_WebSquare_중첩탭_이관수관_기능구현.md
 ```
 ---
 <div align="center">
