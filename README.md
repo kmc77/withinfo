@@ -24,7 +24,7 @@
 | 2026-03-24 | Eclipse m2e 플러그인 복구 및 Deployment Assembly 설정 | [📄 보기](https://github.com/kmc77/withinfo/blob/main/TIL/2026/03/2026-03-24_Eclipse_Maven_m2e_플러그인_복구_및_배포설정.md) |
 | 2026-03-25 | WebSquare 중첩 탭 문제 해결 및 이관·수관 기능 구현 | [📄 보기](https://github.com/kmc77/withinfo/blob/main/TIL/2026/03/2026-03-25_WebSquare_중첩탭_이관수관_기능구현.md) |
 | 2026-03-26 | 이수관 수관탭 구현 및 BRANCH_INFO 설계 | [📄 보기](https://github.com/kmc77/withinfo/blob/main/TIL/2026/03/2026-03-26_이수관_수관탭_승인거절_BRANCH_INFO.md) |
-
+| 2026-03-27 | 이수관 지점·직원 동적 조회 및 승인/거절 플로우 완성 | [📄 보기](https://github.com/kmc77/withinfo/blob/main/TIL/2026/03/2026-03-27_이수관_지점직원_동적조회_승인거절_플로우완성.md) |
 ---
 ## 📂 폴더 구조
 ```
@@ -38,6 +38,7 @@ TIL
         └── 2026-03-24_Eclipse_Maven_m2e_플러그인_복구_및_배포설정.md
         └── 2026-03-25_WebSquare_중첩탭_이관수관_기능구현.md
         └── 2026-03-26_이수관_수관탭_승인거절_BRANCH_INFO.md
+        └── 2026-03-27_이수관_지점직원_동적조회_승인거절_플로우완성.md
 ```
 ---
 <div align="center">
