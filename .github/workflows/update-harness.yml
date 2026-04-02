@@ -25,7 +25,7 @@ jobs:
       - name: Append changed TIL files to harness
         run: |
           HARNESS="harness/kobc-aragon-harness.md"
-          git diff --name-only HEAD~1 HEAD -- 'TIL/**/*.md' | while IFS= read -r f; do
+          git show --name-only --format="" HEAD | grep '^TIL/.*\.md$' | while IFS= read -r f; do
             [ -z "$f" ] && continue
             [ -f "$f" ] || continue
             echo "" >> "$HARNESS"
