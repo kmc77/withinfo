@@ -19,7 +19,7 @@ jobs:
           mkdir -p harness
           HARNESS="harness/kobc-aragon-harness.md"
           if [ ! -f "$HARNESS" ]; then
-            cp harness-template.md "$HARNESS" 2>/dev/null || touch "$HARNESS"
+            cp harness/harness-template.md "$HARNESS" 2>/dev/null || touch "$HARNESS"
           fi
 
       - name: Append changed TIL files to harness
