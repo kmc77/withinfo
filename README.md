@@ -20,12 +20,13 @@
 | 날짜 | 주제 | 링크 |
 |------|------|------|
 | 2026-03-17 | WebSquare + Spring + MyBatis 연동 및 DB 설계 | [📄 보기](https://github.com/kmc77/withinfo/blob/a934b067f1097b3ca18d1a1a2cab5cd50fa2e36d/TIL/2026/03/2026-03-17_WebSquare_Spring_MyBatis_%EC%97%B0%EB%8F%99_%EB%B0%8F_DB%EC%84%A4%EA%B3%84.md) |
-| 2026-03-19 | 형상관리 공통팝업 업서트 | [📄 보기](https://github.com/kmc77/withinfo/blob/a934b067f1097b3ca18d1a1a2cab5cd50fa2e36d/TIL/2026/03/2026-03-19_%ED%98%95%EC%83%81%EA%B4%80%EB%A6%AC%20%EA%B3%B5%ED%86%B5%ED%8C%9D%EC%97%85%20%EC%97%85%EC%84%9C%ED%8A%B8.md)
+| 2026-03-19 | 형상관리 공통팝업 업서트 | [📄 보기](https://github.com/kmc77/withinfo/blob/a934b067f1097b3ca18d1a1a2cab5cd50fa2e36d/TIL/2026/03/2026-03-19_%ED%98%95%EC%83%81%EA%B4%80%EB%A6%AC%20%EA%B3%B5%ED%86%B5%ED%8C%9D%EC%97%85%20%EC%97%85%EC%84%9C%ED%8A%B8.md) |
 | 2026-03-23 | 공통 팝업 검색 개선 및 바깥 화면 데이터 바인딩 | [📄 보기](https://github.com/kmc77/withinfo/blob/a934b067f1097b3ca18d1a1a2cab5cd50fa2e36d/TIL/2026/03/2026-03-23_%EA%B3%B5%ED%86%B5%20%ED%8C%9D%EC%97%85%20%EA%B2%80%EC%83%89%20%EA%B0%9C%EC%84%A0%20%EB%B0%8F%20%EB%B0%94%EA%B9%A5%20%ED%99%94%EB%A9%B4%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%B0%94%EC%9D%B8%EB%94%A9.md) |
 | 2026-03-24 | Eclipse m2e 플러그인 복구 및 Deployment Assembly 설정 | [📄 보기](https://github.com/kmc77/withinfo/blob/9c8566e18357dafdddedfdaa28c9cd880541b10c/TIL/2026/03/2026-03-24_Eclipse%20m2e%20%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8%20%EB%B3%B5%EA%B5%AC%20%EB%B0%8F%20Deployment%20Assembly%20%EC%84%A4%EC%A0%95.md) |
 | 2026-03-25 | WebSquare 중첩 탭 문제 해결 및 이관·수관 기능 구현 | [📄 보기](https://github.com/kmc77/withinfo/blob/9c8566e18357dafdddedfdaa28c9cd880541b10c/TIL/2026/03/2026-03-25_WebSquare%20%EC%A4%91%EC%B2%A9%20%ED%83%AD%20%EB%AC%B8%EC%A0%9C%20%ED%95%B4%EA%B2%B0%20%EB%B0%8F%20%EC%9D%B4%EA%B4%80%C2%B7%EC%88%98%EA%B4%80%20%EA%B8%B0%EB%8A%A5%20%EA%B5%AC%ED%98%84.md) |
 | 2026-03-26 | 이수관 수관탭 구현 및 BRANCH_INFO 설계 | [📄 보기](https://github.com/kmc77/withinfo/blob/9c8566e18357dafdddedfdaa28c9cd880541b10c/TIL/2026/03/2026-03-26_%EC%9D%B4%EC%88%98%EA%B4%80%20%ED%99%94%EB%A9%B4%20%EC%88%98%EA%B4%80%20%ED%83%AD%20%EA%B5%AC%ED%98%84%20%EB%B0%8F%20BRANCH_INFO%20%EC%84%A4%EA%B3%84.md) |
 | 2026-03-27 | 이수관 지점·직원 동적 조회 및 승인/거절 플로우 완성 | [📄 보기](https://github.com/kmc77/withinfo/blob/9c8566e18357dafdddedfdaa28c9cd880541b10c/TIL/2026/03/2026-03-27_%EC%9D%B4%EC%88%98%EA%B4%80%20%EC%A7%80%EC%A0%90%C2%B7%EC%A7%81%EC%9B%90%20%EB%8F%99%EC%A0%81%20%EC%A1%B0%ED%9A%8C%20%EB%B0%8F%20%EC%8A%B9%EC%9D%B8-%EA%B1%B0%EC%A0%88%20%ED%94%8C%EB%A1%9C%EC%9A%B0%20%EC%99%84%EC%84%B1.md) |
+| 2026-04-02 | AraOn 정책팀 착수 — 개발환경 · CF 로직 파악 | [📄 보기](https://github.com/kmc77/withinfo/blob/2a59620b5498ecb533371216862bc0b32e02ebf8/TIL/2026/04/2026-04-02_AraOn%20%EC%A0%95%EC%B1%85%ED%8C%80%20%EC%B0%A9%EC%88%98%20%E2%80%94%20%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%20%C2%B7%20CF%20%EB%A1%9C%EC%A7%81%20%ED%8C%8C%EC%95%85.md) |
 ---
 ## 📂 폴더 구조
 ```
@@ -40,6 +41,8 @@ TIL
         └── 2026-03-25_WebSquare_중첩탭_이관수관_기능구현.md
         └── 2026-03-26_이수관_수관탭_승인거절_BRANCH_INFO.md
         └── 2026-03-27_이수관_지점직원_동적조회_승인거절_플로우완성.md
+    └── 04
+        └── 2026-04-02_AraOn 정책팀 착수 — 개발환경 · CF 로직 파악.md
 ```
 ---
 <div align="center">
