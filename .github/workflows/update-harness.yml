@@ -13,23 +13,24 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
+
       - name: Get changed TIL files
         id: changed
         run: |
           changed=$(git diff --name-only HEAD~1 HEAD -- 'TIL/**/*.md' | head -5)
           echo "files=$changed" >> $GITHUB_OUTPUT
-      - name: Append TIL to Harness
+
+      - name: Write harness template if missing
         run: |
           mkdir -p harness
           HARNESS="harness/kobc-aragon-harness.md"
           if [ ! -f "$HARNESS" ]; then
-            printf '# KOBC AraOn 정책팀 하네스\n' > "$HARNESS"
-            printf '마지막 업데이트: 자동 (TIL 기반)\n\n' >> "$HARNESS"
-            printf '## [데이터 패턴 규칙]\n\n' >> "$HARNESS"
-            printf '## [선임 사고 패턴 규칙]\n\n' >> "$HARNESS"
-            printf '## [아직 불확실한 것]\n\n' >> "$HARNESS"
-            printf '## [TIL 원문 아카이브]\n' >> "$HARNESS"
+            cp harness-template.md "$HARNESS" 2>/dev/null || touch "$HARNESS"
           fi
+
+      - name: Append TIL to Harness
+        run: |
+          HARNESS="harness/kobc-aragon-harness.md"
           FILES="${{ steps.changed.outputs.files }}"
           for f in $FILES; do
             if [ -f "$f" ]; then
@@ -40,6 +41,7 @@ jobs:
               echo "" >> "$HARNESS"
             fi
           done
+
       - name: Commit harness update
         run: |
           git config user.name "github-actions"
