@@ -27,6 +27,7 @@
 | 2026-03-26 | 이수관 수관탭 구현 및 BRANCH_INFO 설계 | [📄 보기](https://github.com/kmc77/withinfo/blob/9c8566e18357dafdddedfdaa28c9cd880541b10c/TIL/2026/03/2026-03-26_%EC%9D%B4%EC%88%98%EA%B4%80%20%ED%99%94%EB%A9%B4%20%EC%88%98%EA%B4%80%20%ED%83%AD%20%EA%B5%AC%ED%98%84%20%EB%B0%8F%20BRANCH_INFO%20%EC%84%A4%EA%B3%84.md) |
 | 2026-03-27 | 이수관 지점·직원 동적 조회 및 승인/거절 플로우 완성 | [📄 보기](https://github.com/kmc77/withinfo/blob/9c8566e18357dafdddedfdaa28c9cd880541b10c/TIL/2026/03/2026-03-27_%EC%9D%B4%EC%88%98%EA%B4%80%20%EC%A7%80%EC%A0%90%C2%B7%EC%A7%81%EC%9B%90%20%EB%8F%99%EC%A0%81%20%EC%A1%B0%ED%9A%8C%20%EB%B0%8F%20%EC%8A%B9%EC%9D%B8-%EA%B1%B0%EC%A0%88%20%ED%94%8C%EB%A1%9C%EC%9A%B0%20%EC%99%84%EC%84%B1.md) |
 | 2026-04-02 | AraOn 정책팀 착수 — 개발환경 · CF 로직 파악 | [📄 보기](https://github.com/kmc77/withinfo/blob/2a59620b5498ecb533371216862bc0b32e02ebf8/TIL/2026/04/2026-04-02_AraOn%20%EC%A0%95%EC%B1%85%ED%8C%80%20%EC%B0%A9%EC%88%98%20%E2%80%94%20%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%20%C2%B7%20CF%20%EB%A1%9C%EC%A7%81%20%ED%8C%8C%EC%95%85.md) |
+| 2026-04-03 | 2026-04-03_국가필수선대 지정/해지 이력 관리 개발 착수 | [📄 보기](https://github.com/kmc77/withinfo/blob/68ea2555d0910e3b8c0dd8be90c5c96987f28eb9/TIL/2026/04/2026-04-03_%EA%B5%AD%EA%B0%80%ED%95%84%EC%88%98%EC%84%A0%EB%8C%80%20%EC%A7%80%EC%A0%95%20%7C%20%ED%95%B4%EC%A7%80%20%EC%9D%B4%EB%A0%A5%20%EA%B4%80%EB%A6%AC%20%EA%B0%9C%EB%B0%9C%20%EC%B0%A9%EC%88%98.md) |
 ---
 ## 📂 폴더 구조
 ```
@@ -43,6 +44,7 @@ TIL
         └── 2026-03-27_이수관_지점직원_동적조회_승인거절_플로우완성.md
     └── 04
         └── 2026-04-02_AraOn 정책팀 착수 — 개발환경 · CF 로직 파악.md
+        └── 2026-04-03_국가필수선대 지정/해지 이력 관리 개발 착수.md
 ```
 ---
 <div align="center">
