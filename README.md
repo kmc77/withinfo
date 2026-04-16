@@ -33,6 +33,7 @@
 | 2026-04-08 | 2026-04-08_화면설계서 필드매핑 및 개발환경 팁 | [📄 보기](https://github.com/kmc77/withinfo/blob/cb661248d2ad37f8be15efd4f47370af9baac051/TIL/2026/04/2026-04-08_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C%20%ED%95%84%EB%93%9C%EB%A7%A4%ED%95%91%20%EB%B0%8F%20%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%20%ED%8C%81.md) |
 | 2026-04-10 | 2026-04-10_화면정의 및 처리흐름 타당성 분석 | [📄 보기](https://github.com/kmc77/withinfo/blob/e42bd0a0ca991ccf3c0d7c2233fda9b0d8accfc6/TIL/2026/04/2026-04-10_%ED%99%94%EB%A9%B4%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%EC%B2%98%EB%A6%AC%ED%9D%90%EB%A6%84%20%ED%83%80%EB%8B%B9%EC%84%B1%20%EB%B6%84%EC%84%9D.md) |
 | 2026-04-14 | 2026-04-14_Repricing 금리관리 개발 착수 및 유효성 검사 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/abfebea2d21a127d141fe1aff377c065cc77f093/TIL/2026/04/2026-04-14_Repricing%20%EA%B8%88%EB%A6%AC%EA%B4%80%EB%A6%AC%20%EA%B0%9C%EB%B0%9C%20%EC%B0%A9%EC%88%98%20%EB%B0%8F%20%EC%9C%A0%ED%9A%A8%EC%84%B1%20%EA%B2%80%EC%82%AC%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
+| 2026-04-15 | 2026-04-15_AraOn ERP 사업년도별 지급내역 쿼리 수정 | [📄 보기](https://github.com/kmc77/withinfo/blob/be6278708291231364a397736f8714cdbcdef9cc/TIL/2026/04/2026-04-15_AraOn%20ERP%20%EC%82%AC%EC%97%85%EB%85%84%EB%8F%84%EB%B3%84%20%EC%A7%80%EA%B8%89%EB%82%B4%EC%97%AD%20%EC%BF%BC%EB%A6%AC%20%EC%88%98%EC%A0%95.md) |
 ---
 ## 📂 폴더 구조
 ```
@@ -55,6 +56,7 @@ TIL
         └── 2026-04-08_화면설계서_화면설계서 필드매핑 및 개발환경 팁.md
         └── 2026-04-10_화면정의 및 처리흐름 타당성 분석.md
         └── 2026-04-14_Repricing 금리관리 개발 착수 및 유효성 검사 디버깅.md
+        └── 2026-04-15_AraOn ERP 사업년도별 지급내역 쿼리 수정.md
 ```
 ---
 <div align="center">
