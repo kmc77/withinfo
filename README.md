@@ -34,6 +34,7 @@
 | 2026-04-10 | 2026-04-10_화면정의 및 처리흐름 타당성 분석 | [📄 보기](https://github.com/kmc77/withinfo/blob/e42bd0a0ca991ccf3c0d7c2233fda9b0d8accfc6/TIL/2026/04/2026-04-10_%ED%99%94%EB%A9%B4%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%EC%B2%98%EB%A6%AC%ED%9D%90%EB%A6%84%20%ED%83%80%EB%8B%B9%EC%84%B1%20%EB%B6%84%EC%84%9D.md) |
 | 2026-04-14 | 2026-04-14_Repricing 금리관리 개발 착수 및 유효성 검사 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/abfebea2d21a127d141fe1aff377c065cc77f093/TIL/2026/04/2026-04-14_Repricing%20%EA%B8%88%EB%A6%AC%EA%B4%80%EB%A6%AC%20%EA%B0%9C%EB%B0%9C%20%EC%B0%A9%EC%88%98%20%EB%B0%8F%20%EC%9C%A0%ED%9A%A8%EC%84%B1%20%EA%B2%80%EC%82%AC%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
 | 2026-04-15 | 2026-04-15_AraOn ERP 사업년도별 지급내역 쿼리 수정 | [📄 보기](https://github.com/kmc77/withinfo/blob/be6278708291231364a397736f8714cdbcdef9cc/TIL/2026/04/2026-04-15_AraOn%20ERP%20%EC%82%AC%EC%97%85%EB%85%84%EB%8F%84%EB%B3%84%20%EC%A7%80%EA%B8%89%EB%82%B4%EC%97%AD%20%EC%BF%BC%EB%A6%AC%20%EC%88%98%EC%A0%95.md) |
+| 2026-04-16 | 2026-04-16_사업연도별 지급내역 otherwise 분기 완료 및 Repricing 서버단 준비 | [📄 보기](https://github.com/kmc77/withinfo/blob/16b1c4b29fc5c710ca62b76b290e9c2a9bc620ac/TIL/2026/04/2026-04-16_%EC%82%AC%EC%97%85%EC%97%B0%EB%8F%84%EB%B3%84%20%EC%A7%80%EA%B8%89%EB%82%B4%EC%97%AD%20otherwise%20%EB%B6%84%EA%B8%B0%20%EC%99%84%EB%A3%8C%20%EB%B0%8F%20Repricing%20%EC%84%9C%EB%B2%84%EB%8B%A8%20%EC%A4%80%EB%B9%84.md) |
 ---
 ## 📂 폴더 구조
 ```
@@ -57,6 +58,7 @@ TIL
         └── 2026-04-10_화면정의 및 처리흐름 타당성 분석.md
         └── 2026-04-14_Repricing 금리관리 개발 착수 및 유효성 검사 디버깅.md
         └── 2026-04-15_AraOn ERP 사업년도별 지급내역 쿼리 수정.md
+        └── 2026-04-16_사업연도별 지급내역 otherwise 분기 완료 및 Repricing 서버단 준비.md
 ```
 ---
 <div align="center">
