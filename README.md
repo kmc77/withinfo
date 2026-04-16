@@ -31,6 +31,7 @@
 | 2026-04-06 | 2026-04-06_국가필수선대 지정/해지 이력 관리 구현 진행 | [📄 보기](https://github.com/kmc77/withinfo/blob/9ab72c74abbede3c6c3bdcfc17d7744af1db596a/TIL/2026/04/2026-04-06_%EA%B5%AD%EA%B0%80%ED%95%84%EC%88%98%EC%84%A0%EB%8C%80%20%EC%A7%80%EC%A0%95%20%7C%20%ED%95%B4%EC%A7%80%20%EC%9D%B4%EB%A0%A5%20%EA%B4%80%EB%A6%AC%20%EA%B5%AC%ED%98%84%20%EC%A7%84%ED%96%89.md) |
 | 2026-04-07 | 2026-04-07_화면설계서 문서작업 체크리스트 | [📄 보기](https://github.com/kmc77/withinfo/blob/6a2786d9be5fe9258fa2f61ad870beccedcc9b46/TIL/2026/04/2026-04-07_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C%20%EB%AC%B8%EC%84%9C%EC%9E%91%EC%97%85%20%EC%B2%B4%ED%81%AC%EB%A6%AC%EC%8A%A4%ED%8A%B8.md) |
 | 2026-04-08 | 2026-04-08_화면설계서 필드매핑 및 개발환경 팁 | [📄 보기](https://github.com/kmc77/withinfo/blob/cb661248d2ad37f8be15efd4f47370af9baac051/TIL/2026/04/2026-04-08_%ED%99%94%EB%A9%B4%EC%84%A4%EA%B3%84%EC%84%9C%20%ED%95%84%EB%93%9C%EB%A7%A4%ED%95%91%20%EB%B0%8F%20%EA%B0%9C%EB%B0%9C%ED%99%98%EA%B2%BD%20%ED%8C%81.md) |
+| 2026-04-10 | 2026-04-10_화면정의 및 처리흐름 타당성 분석 | [📄 보기](https://github.com/kmc77/withinfo/blob/e42bd0a0ca991ccf3c0d7c2233fda9b0d8accfc6/TIL/2026/04/2026-04-10_%ED%99%94%EB%A9%B4%EC%A0%95%EC%9D%98%20%EB%B0%8F%20%EC%B2%98%EB%A6%AC%ED%9D%90%EB%A6%84%20%ED%83%80%EB%8B%B9%EC%84%B1%20%EB%B6%84%EC%84%9D.md) |
 ---
 ## 📂 폴더 구조
 ```
@@ -51,6 +52,7 @@ TIL
         └── 2026-04-06_국가필수선대_이력관리_구현진행.md
         └── 2026-04-07_화면설계서_문서작업_체크리스트.md
         └── 2026-04-08_화면설계서_화면설계서 필드매핑 및 개발환경 팁.md
+        └── 2026-04-10_화면정의 및 처리흐름 타당성 분석.md
 ```
 ---
 <div align="center">
