@@ -37,6 +37,7 @@
 | 2026-04-16 | 2026-04-16_사업연도별 지급내역 otherwise 분기 완료 및 Repricing 서버단 준비 | [📄 보기](https://github.com/kmc77/withinfo/blob/16b1c4b29fc5c710ca62b76b290e9c2a9bc620ac/TIL/2026/04/2026-04-16_%EC%82%AC%EC%97%85%EC%97%B0%EB%8F%84%EB%B3%84%20%EC%A7%80%EA%B8%89%EB%82%B4%EC%97%AD%20otherwise%20%EB%B6%84%EA%B8%B0%20%EC%99%84%EB%A3%8C%20%EB%B0%8F%20Repricing%20%EC%84%9C%EB%B2%84%EB%8B%A8%20%EC%A4%80%EB%B9%84.md) |
 | 2026-04-17 | 2026-04-17_Repricing 단위테스트 작성 및 ReqVO 필드 누락 수정 | [📄 보기](https://github.com/kmc77/withinfo/blob/9e17fba5876e33c53003c28e62709e461ae4ce1c/TIL/2026/04/2026-04-17_Repricing%20%EB%8B%A8%EC%9C%84%ED%85%8C%EC%8A%A4%ED%8A%B8%20%EC%9E%91%EC%84%B1%20%EB%B0%8F%20ReqVO%20%ED%95%84%EB%93%9C%20%EB%88%84%EB%9D%BD%20%EC%88%98%EC%A0%95.md) |
 | 2026-04-20 | 2026-04-20_Repricing 조회 바인딩 디버깅 및 코테 | [📄 보기](https://github.com/kmc77/withinfo/blob/2a9af778f78982d0ca41388eebbf6ea46d3e95e8/TIL/2026/04/2026-04-20_Repricing%20%EC%A1%B0%ED%9A%8C%20%EB%B0%94%EC%9D%B8%EB%94%A9%20%EB%94%94%EB%B2%84%EA%B9%85%20%EB%B0%8F%20%EC%BD%94%ED%85%8C.md) |
+| 2026-04-21 | 2026-04-21_Repricing 조회 0건 원인 해결 및 그리드 헤더 동적 변경 | [📄 보기](https://github.com/kmc77/withinfo/blob/a403cf38072e6379dc655c5afa2ce91a4df57e8e/TIL/2026/04/2026-04-21_Repricing%20%EC%A1%B0%ED%9A%8C%200%EA%B1%B4%20%EC%9B%90%EC%9D%B8%20%ED%95%B4%EA%B2%B0%20%EB%B0%8F%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%ED%97%A4%EB%8D%94%20%EB%8F%99%EC%A0%81%20%EB%B3%80%EA%B2%BD.md) |
 
 ---
 ## 📂 폴더 구조
@@ -64,6 +65,8 @@ TIL
         └── 2026-04-16_사업연도별 지급내역 otherwise 분기 완료 및 Repricing 서버단 준비.md
         └── 2026-04-17_Repricing 단위테스트 작성 및 ReqVO 필드 누락 수정.md
         └── 2026-04-20_Repricing 조회 바인딩 디버깅 및 코테.md
+        └── 2026-04-21_Repricing 조회 0건 원인 해결 및 그리드 헤더 동적 변경.md
+
 ```
 ---
 <div align="center">
