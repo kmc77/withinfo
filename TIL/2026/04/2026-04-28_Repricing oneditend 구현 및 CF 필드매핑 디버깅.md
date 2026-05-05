@@ -3,8 +3,11 @@
 ## 오늘 한 것
 - `grd_list_oneditend` 구현 — Observation Date 변경 시 기준금리 재조회
 - `oneditend` 파라미터 버그 원인 파악 및 `getColumnIndex` 우회
+- 조건문 `&&` vs `||` 버그 수정
 - TypeError 디버깅 (submission ID, `submit()` → `com.sbm.execute`)
 - `bgngYmdFxtnYn` YN 플래그 역할 파악 (회의록 기반)
+- VO 신규 생성 기준 정리
+- dataList1 ref로 row 전송 방식 확인
 - `CashFlowCmptImpl.java` NPE 원인 분석
 - dataList1 컬럼명 vs CF 필드명 불일치 파악 → 화면단 매핑 방향 확정
 - 코딩테스트 2문제
@@ -38,6 +41,31 @@ SELECT B.TITLE, B.BOARD_ID, R.REPLY_ID, R.WRITER_ID, R.CONTENTS,
 
 ---
 
+## VO 신규 생성 기준
+
+| 상황 | 판단 |
+|---|---|
+| 기존 VO 필드에 다 들어감 | 재사용 |
+| 응답이 단일값 1~2개 | DataMap으로 처리 |
+| 기존 VO에 없는 필드가 필요 | 신규 VO 생성 |
+| 여러 화면에서 재사용 예정 | 신규 VO 생성 |
+
+`selectCrtrInrt` 케이스 → 요청/응답 모두 기존 VO 재사용으로 처리.
+
+---
+
+## selectObservationDate 흐름
+
+```
+inrtCmptYmd 변경
+→ dataList1 row에 CF 필드 매핑 세팅
+→ sbm_selectObservationDateInrt 호출 (dataList1 ref로 row 전송)
+→ /api/sf/cs/cmsf/selectCrtrInrt
+→ 응답 dataList1 자동 업데이트 (crtrInrt 갱신)
+```
+
+---
+
 ## WebSquare
 
 ### oneditend 파라미터 버그 — colId 자리에 value가 찍힘
@@ -52,11 +80,31 @@ if(colId != "inrtCmptYmd") return;
 if(col != grd_list.getColumnIndex("inrtCmptYmd")) return;
 ```
 
+### 조건문 && vs || 주의
+```js
+// 버그 — inrtCmptYmd 아닌 컬럼도 submit까지 탐
+if(colId != "inrtCmptYmd" && com.util.isEmpty(value)) return;
+
+// 정상
+if(col != grd_list.getColumnIndex("inrtCmptYmd") || com.util.isEmpty(value)) return;
+```
+
 ### com.sbm.execute 사용법
 `submit()` 대신 사용. 콜백 함수 직접 전달.
 ```js
 com.sbm.execute("sbm_id", callbackFn);
 ```
+
+### dataList1 ref로 특정 row 전송
+submission `ref`를 `dataList1`으로 설정하면 row 전체 전송 가능.
+```xml
+<xf:submission id="sbm_selectObservationDateInrt"
+    ref='data:json,{"id":"dataList1","key":"rclcInrtMngListVO"}'
+    action="/api/sf/cs/cmsf/selectCrtrInrt"
+    ...>
+</xf:submission>
+```
+응답도 dataList1 전체 컬럼에 자동 세팅됨 (Submission 탭에서 target 체크 확인).
 
 ### dataList1 hidden 컬럼 추가
 서버에 전달해야 하지만 화면에 보여주지 않아도 되는 컬럼은 `hidden="true"` 처리.
