@@ -49,7 +49,40 @@ btn_remove       // 삭제
 
 ---
 
-## 2. setCommonCode 그리드 컬럼 바인딩 ⭐
+## 2. DataMap set 키 - 컴포넌트 id vs VO 필드명 ⚠️
+
+### 문제
+
+화면 진입 시 부서코드(`deptCd`) 값이 안 들어옴. 콘솔에는 사용자 정보 정상 출력.
+
+```js
+// ❌ 안 되는 코드
+var userInfo = com.data.getUserInfr();
+dma_rclcInrtMngReqVO.set("ibx_deptCd", userInfo.deptCd);
+```
+
+### 원인
+
+`ibx_deptCd`는 화면의 인풋박스 **컴포넌트 id**. DataMap의 필드명이 아님.
+
+### 해결
+
+VO에 정의된 실제 필드명으로 변경:
+
+```js
+// ✅ 정상 동작
+dma_rclcInrtMngReqVO.set("deptCd", userInfo.deptCd);
+```
+
+### 핵심 학습
+
+- DataMap `set(key, value)`의 key는 **DataMap에 정의된 필드명** (= VO 필드명)
+- 컴포넌트 id (`ibx_xxx`, `sbx_xxx`)와 혼동 시 **에러 없이 무시되어 디버깅 어려움**
+- 인풋박스 컴포넌트의 `ref` 속성이 `data:dma_xxx.fieldNm` 형태로 VO 필드를 가리키는 구조 → 컴포넌트와 데이터는 분리
+
+---
+
+## 3. setCommonCode 그리드 컬럼 바인딩 ⭐
 
 ### 핵심 발견 — 공식 지원 문법
 
@@ -81,15 +114,50 @@ com.data.setCommonCode(codeOptions);
 
 `displayMode="label"` 빠지면 코드값(`0001`)이 그대로 노출됨. 코드명(`직전적용일`)을 표시하려면 필수.
 
+### 다중 매핑 패턴 — 한 grpCd로 여러 컴포넌트 동시 바인딩
+
+```js
+{ grpCd : "0001", compID : "sbx_chgAfCrtrInrtClssCd2,grdResult:inrtClssCd", sysCd : gcm.SYS_CD.TST }
+```
+
+콤마 구분으로 셀렉트박스 + 그리드 컬럼 동시 바인딩 가능.
+
 ### 핵심 학습
 
 - grpCd 하나만 세팅하면 해당 그룹 전체 코드가 자동 로드됨 (개별 코드값 일일이 안 넘겨도 됨)
-- 한 compID에 여러 컴포넌트 매핑 가능: `"sbx_xxx,grd_list:colId"` (콤마 구분)
 - 단순 코드 변환이 아닌 별도 기준 적용이 필요한 경우(예: 선종 코드)는 codeOptions로 처리 불가 → 별도 변환 로직 필요
 
 ---
 
-## 3. 그리드 expression 컬럼 — 행 내 연산
+## 4. xf:select1 + compID 매핑 패턴
+
+setCommonCode를 단독 select1에 적용하는 표준 패턴 (다른 화면 참고):
+
+```xml
+<xf:select1 id="sbx_micoClssCd"
+            ref="data:adl_dma_clcmVO.micoClssCd"
+            allOption=""
+            appearance="minimal"
+            chooseOption="true"
+            disabled="true"
+            disabledClass="w2selectbox_disabled"
+            style="width:100%;"
+            submenuSize="auto">
+</xf:select1>
+```
+
+```js
+var codeOptions = [
+    { grpCd : "0018", compID : "sbx_micoClssCd" }
+];
+com.data.setCommonCode(codeOptions);
+```
+
+**핵심:** `xf:select1`은 itemset 직접 정의 없이도 compID 지정만으로 자동 주입됨. `ref`는 DataMap 필드와 연결, `compID`는 setCommonCode가 코드 리스트를 주입할 대상.
+
+---
+
+## 5. 그리드 expression 컬럼 — 행 내 연산
 
 기준금리 + 조정금리 = Spread 자동 계산.
 
@@ -103,7 +171,7 @@ expression="crtrInrt + inrtSprdItrt"
 expression="{crtrInrt} + {inrtSprdItrt}"
 expression="#{crtrInrt} + #{inrtSprdItrt}"
 
-<!-- ❌ SUM 사용 -->
+<!-- ❌ SUM 사용 (footer 전용) -->
 expression="SUM(crtrInrt, inrtSprdItrt)"
 ```
 
@@ -128,7 +196,7 @@ expression="SUM(crtrInrt, inrtSprdItrt)"
 
 ---
 
-## 4. 그리드 셀 변경 이벤트 — oneditend
+## 6. 그리드 셀 변경 이벤트 — oneditend
 
 캘린더 값 변경 시 조회 쿼리 호출.
 
@@ -162,7 +230,7 @@ scwin.grd_list_oneditend = function(row, col, colId, value) {
 
 ---
 
-## 5. 수정 버튼 동작 변경 — 즉시 저장 방식
+## 7. 수정 버튼 동작 변경 — 즉시 저장 방식
 
 기존 설계는 "수정 버튼 → 편집 모드 → 사용자 입력 → 별도 저장"이었으나, 사수 확인 결과 "수정 버튼 클릭 = 즉시 저장 실행"이 맞음.
 
@@ -202,7 +270,7 @@ scwin.grd_list_oncellclick = function(row, col, colId) {
 
 ---
 
-## 6. 회의 메모 — 금리/코드 표시 규칙
+## 8. 회의 메모 — 금리/코드 표시 규칙
 
 ### 퍼센트 + 소수점 5자리
 
@@ -228,7 +296,7 @@ dataType="number"
 
 ---
 
-## 7. 국가필수선대 — 등록자명 표시 (TSM_USER_I JOIN)
+## 9. 국가필수선대 — 등록자명 표시 (TSM_USER_I JOIN)
 
 ### 문제
 
@@ -273,7 +341,7 @@ SELECT B.NTN_ESNTL_GRSH_NO
 
 ---
 
-## 8. Git pull 충돌 처리
+## 10. Git pull 충돌 처리
 
 `commonSf.js` 같은 공통파일을 로컬 수정한 상태에서 pull 시도하면:
 
@@ -321,7 +389,9 @@ git pull
 
 | 주제              | 교훈                                                                |
 |-----------------|-------------------------------------------------------------------|
+| DataMap set 키   | 컴포넌트 id(`ibx_xxx`) 아님. **VO 필드명** 사용. 잘못 쓰면 에러 없이 무시됨               |
 | 공통코드 그리드 바인딩    | `compID: "그리드ID:컬럼ID"` 패턴. grpCd 하나로 그룹 전체 자동 로드                  |
+| 공통코드 다중 매핑      | `compID: "sbx_xxx,grd_list:colId"` 콤마 구분으로 여러 컴포넌트 동시 바인딩          |
 | displayMode     | `"label"` 필수. 빠지면 코드값 그대로 노출                                       |
 | 그리드 expression  | body column에서는 `display('컬럼ID')` 사용. SUM/MIN/MAX는 footer 전용         |
 | 셀 변경 이벤트        | `oneditend` (편집 완료 시점). `onmodelchange`는 부적합                       |
