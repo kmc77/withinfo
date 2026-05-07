@@ -41,6 +41,7 @@
 | 2026-04-22 | 2026-04-22_Repricing 수정버튼 클릭이벤트 구현 | [📄 보기](https://github.com/kmc77/withinfo/blob/123a7a3596ce2acd65cd86d4993355366c31e047/TIL/2026/04/2026-04-22_Repricing%20%EC%88%98%EC%A0%95%EB%B2%84%ED%8A%BC%20%ED%81%B4%EB%A6%AD%EC%9D%B4%EB%B2%A4%ED%8A%B8%20%EA%B5%AC%ED%98%84.md) |
 | 2026-04-23 | 2026-04-23_Repricing 수정버튼 활성화 제어 및 편집모드 구현 | [📄 보기](https://github.com/kmc77/withinfo/blob/c67774451c8fd6d56221279073022bc22a405b1d/TIL/2026/04/2026-04-23_Repricing%20%EC%88%98%EC%A0%95%EB%B2%84%ED%8A%BC%20%ED%99%9C%EC%84%B1%ED%99%94%20%EC%A0%9C%EC%96%B4%20%EB%B0%8F%20%ED%8E%B8%EC%A7%91%EB%AA%A8%EB%93%9C%20%EA%B5%AC%ED%98%84.md) |
 | 2026-04-27 | 2026-04-27_공통코드 그리드 바인딩 및 Repricing 금리관리 진행 | [📄 보기](https://github.com/kmc77/withinfo/blob/d6763a979d757fdcfdbeff1047042f7ddb12347b/TIL/2026/04/2026-04-27_%EA%B3%B5%ED%86%B5%EC%BD%94%EB%93%9C%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%EB%B0%94%EC%9D%B8%EB%94%A9%20%EB%B0%8F%20Repricing%20%EA%B8%88%EB%A6%AC%EA%B4%80%EB%A6%AC%20%EC%A7%84%ED%96%89.md) |
+| 2026-04-28 | 2026-04-28_Repricing oneditend 구현 및 CF 필드매핑 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/0601a52c0bbeac54de8297e778f87d21d0ddd916/TIL/2026/04/2026-04-28_Repricing%20oneditend%20%EA%B5%AC%ED%98%84%20%EB%B0%8F%20CF%20%ED%95%84%EB%93%9C%EB%A7%A4%ED%95%91%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
 
 
 ---
@@ -73,6 +74,7 @@ TIL
         └── 2026-04-22_Repricing 수정버튼 클릭이벤트 구현.md
         └── 2026-04-23_Repricing 수정버튼 활성화 제어 및 편집모드 구현.md
         └── 2026-04-27_공통코드 그리드 바인딩 및 Repricing 금리관리 진행.md
+        └── 2026-04-28_Repricing oneditend 구현 및 CF 필드매핑 디버깅.md
 
 
 ```
