@@ -43,6 +43,7 @@
 | 2026-04-27 | 2026-04-27_공통코드 그리드 바인딩 및 Repricing 금리관리 진행 | [📄 보기](https://github.com/kmc77/withinfo/blob/d6763a979d757fdcfdbeff1047042f7ddb12347b/TIL/2026/04/2026-04-27_%EA%B3%B5%ED%86%B5%EC%BD%94%EB%93%9C%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%EB%B0%94%EC%9D%B8%EB%94%A9%20%EB%B0%8F%20Repricing%20%EA%B8%88%EB%A6%AC%EA%B4%80%EB%A6%AC%20%EC%A7%84%ED%96%89.md) |
 | 2026-04-28 | 2026-04-28_Repricing oneditend 구현 및 CF 필드매핑 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/0601a52c0bbeac54de8297e778f87d21d0ddd916/TIL/2026/04/2026-04-28_Repricing%20oneditend%20%EA%B5%AC%ED%98%84%20%EB%B0%8F%20CF%20%ED%95%84%EB%93%9C%EB%A7%A4%ED%95%91%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
 | 2026-04-29 | 2026-04-29_Repricing selectCrtrInrt payload 트러블슈팅 전 과정 | [📄 보기](https://github.com/kmc77/withinfo/blob/a9130906e6a29e54d48844b846b9dd0234197063/TIL/2026/04/2026-04-29_Repricing%20selectCrtrInrt%20payload%20%ED%8A%B8%EB%9F%AC%EB%B8%94%EC%8A%88%ED%8C%85%20%EC%A0%84%20%EA%B3%BC%EC%A0%95.md) |
+| 2026-04-30 | 2026-04-30_Repricing 금리관리 Observation Date 응답 바인딩 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/536c743344ec158a12c1db72388c6c2cbf0196b0/TIL/2026/04/2026-04-30_Repricing%20%EA%B8%88%EB%A6%AC%EA%B4%80%EB%A6%AC%20Observation%20Date%20%EC%9D%91%EB%8B%B5%20%EB%B0%94%EC%9D%B8%EB%94%A9%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
 
 
 ---
@@ -77,6 +78,7 @@ TIL
         └── 2026-04-27_공통코드 그리드 바인딩 및 Repricing 금리관리 진행.md
         └── 2026-04-28_Repricing oneditend 구현 및 CF 필드매핑 디버깅.md
         └── 2026-04-29_Repricing selectCrtrInrt payload 트러블슈팅 전 과정.md
+        └── 2026-04-30_Repricing 금리관리 Observation Date 응답 바인딩 디버깅.md
 
 
 ```
