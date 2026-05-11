@@ -46,6 +46,7 @@
 | 2026-04-30 | 2026-04-30_Repricing 금리관리 Observation Date 응답 바인딩 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/536c743344ec158a12c1db72388c6c2cbf0196b0/TIL/2026/04/2026-04-30_Repricing%20%EA%B8%88%EB%A6%AC%EA%B4%80%EB%A6%AC%20Observation%20Date%20%EC%9D%91%EB%8B%B5%20%EB%B0%94%EC%9D%B8%EB%94%A9%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
 | 2026-05-06 | 2026-05-06_Repricing 검색조건 추가 및 saveRepricingAplcn 전체 구현 | [📄 보기](https://github.com/kmc77/withinfo/blob/c454f076b301b4b3e3c926f1883dedd091d5b7df/TIL/2026/05/2026-05-06_Repricing%20%EA%B2%80%EC%83%89%EC%A1%B0%EA%B1%B4%20%EC%B6%94%EA%B0%80%20%EB%B0%8F%20saveRepricingAplcn%20%EC%A0%84%EC%B2%B4%20%EA%B5%AC%ED%98%84.md) |
 | 2026-05-08 | 2026-05-08 이차보전 금액검증 탭 추가 및 다중 그리드 조회 구현 + Repricing 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/65ac2a5d9b2e3eea736f9a57672098abac0d7fc8/TIL/2026/05/2026-05-08%20%EC%9D%B4%EC%B0%A8%EB%B3%B4%EC%A0%84%20%EA%B8%88%EC%95%A1%EA%B2%80%EC%A6%9D%20%ED%83%AD%20%EC%B6%94%EA%B0%80%20%EB%B0%8F%20%EB%8B%A4%EC%A4%91%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%EC%A1%B0%ED%9A%8C%20%EA%B5%AC%ED%98%84%20%2B%20Repricing%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
+| 2026-05-11 | 2026-05-11 이차보전 금액 검증 — 엑셀 다운로드_JDBC-5074 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/f54aec3fd84db74b55456040a39925ab3673bd0a/TIL/2026/05/2026-05-11%20%EC%9D%B4%EC%B0%A8%EB%B3%B4%EC%A0%84%20%EA%B8%88%EC%95%A1%20%EA%B2%80%EC%A6%9D%20%E2%80%94%20%EC%97%91%EC%85%80%20%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C_JDBC-5074%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
 
 
 ---
@@ -84,6 +85,7 @@ TIL
     └── 05
         └── 2026-05-06_Repricing 검색조건 추가 및 saveRepricingAplcn 전체 구현.md
         └── 2026-05-08 이차보전 금액검증 탭 추가 및 다중 그리드 조회 구현 + Repricing 디버깅.md
+        └── 2026-05-11 이차보전 금액 검증 — 엑셀 다운로드_JDBC-5074 디버깅.md
 
 
 ```
