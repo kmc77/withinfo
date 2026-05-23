@@ -50,6 +50,7 @@
 | 2026-05-12 | 2026-05-12 이차보전 금액 검증 — JDBC-5074 디버깅 착수 | [📄 보기](https://github.com/kmc77/withinfo/blob/844a52bb44308e421c0d2391787085726baa4970/TIL/2026/05/2026-05-12%20%EC%9D%B4%EC%B0%A8%EB%B3%B4%EC%A0%84%20%EA%B8%88%EC%95%A1%20%EA%B2%80%EC%A6%9D%20%E2%80%94%20JDBC-5074%20%EB%94%94%EB%B2%84%EA%B9%85%20%EC%B0%A9%EC%88%98.md) |
 | 2026-05-13 | 2026-05-13 이차보전 화면 기능 구현 — alert 순서, 그리드 헤더 아이콘, 만기일 자동표시 | [📄 보기](https://github.com/kmc77/withinfo/blob/49eb92b44981e0dd395aa1161eb82742671645f3/TIL/2026/05/2026-05-13%20%EC%9D%B4%EC%B0%A8%EB%B3%B4%EC%A0%84%20%ED%99%94%EB%A9%B4%20%EA%B8%B0%EB%8A%A5%20%EA%B5%AC%ED%98%84%20%E2%80%94%20alert%20%EC%88%9C%EC%84%9C%2C%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%ED%97%A4%EB%8D%94%20%EC%95%84%EC%9D%B4%EC%BD%98%2C%20%EB%A7%8C%EA%B8%B0%EC%9D%BC%20%EC%9E%90%EB%8F%99%ED%91%9C%EC%8B%9C.md) |
 | 2026-05-14 | 2026-05-14 TIL — udc_help 그리드 헤더 도움말 팝업 & 반입 도구 파악 | [📄 보기](https://github.com/kmc77/withinfo/blob/49eb92b44981e0dd395aa1161eb82742671645f3/TIL/2026/05/2026-05-14%20TIL%20%E2%80%94%20udc_help%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%ED%97%A4%EB%8D%94%20%EB%8F%84%EC%9B%80%EB%A7%90%20%ED%8C%9D%EC%97%85%20%26%20%EB%B0%98%EC%9E%85%20%EB%8F%84%EA%B5%AC%20%ED%8C%8C%EC%95%85.md) |
+| 2026-05-18 | 2026-05-18 TIL — Repricing 서버단 Observation Date 계산 및 저장쿼리 디버깅 | [📄 보기](https://github.com/kmc77/withinfo/blob/7f875ffa31af0ff1f462f2ab2e6a9ddbb2d153b2/TIL/2026/05/2026-05-18%20TIL%20%E2%80%94%20Repricing%20%EC%84%9C%EB%B2%84%EB%8B%A8%20Observation%20Date%20%EA%B3%84%EC%82%B0%20%EB%B0%8F%20%EC%A0%80%EC%9E%A5%EC%BF%BC%EB%A6%AC%20%EB%94%94%EB%B2%84%EA%B9%85.md) |
 
 
 
@@ -92,6 +93,7 @@ TIL
         └── 2026-05-11 이차보전 금액 검증 — 엑셀 다운로드_JDBC-5074 디버깅.md
         └── 2026-05-13 이차보전 화면 기능 구현 — alert 순서, 그리드 헤더 아이콘, 만기일 자동표시.md
         └── 2026-05-14 TIL — udc_help 그리드 헤더 도움말 팝업 & 반입 도구 파악.md
+        └── 2026-05-18 TIL — Repricing 서버단 Observation Date 계산 및 저장쿼리 디버깅.md
 
 
 
