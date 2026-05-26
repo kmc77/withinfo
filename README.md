@@ -54,6 +54,7 @@
 | 2026-05-19 | 2026-05-19 TIL — selectCrtrInrt 입출력 착각 회고 · 작은 그리드 퍼블 · 엑셀 % 컬럼 부풀림 | [📄 보기](https://github.com/kmc77/withinfo/blob/73079cb0329c0dda3832e7993a12269e7bd0b9db/TIL/2026/05/2026-05-19%20TIL%20%E2%80%94%20selectCrtrInrt%20%EC%9E%85%EC%B6%9C%EB%A0%A5%20%EC%B0%A9%EA%B0%81%20%ED%9A%8C%EA%B3%A0%20%C2%B7%20%EC%9E%91%EC%9D%80%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%ED%8D%BC%EB%B8%94%20%C2%B7%20%EC%97%91%EC%85%80%20%25%20%EC%BB%AC%EB%9F%BC%20%EB%B6%80%ED%92%80%EB%A6%BC.md) |
 | 2026-05-20 | 2026-05-20 TIL — 이차보전 화면 엑셀 % 부풀림 해결, 그리드 셀별 첨부파일 업로드, 동일 기업 자동 복사 로직 설계 | [📄 보기](https://github.com/kmc77/withinfo/blob/d5e653aa31bd584591f91854e1a61b772d7d5f79/TIL/2026/05/2026-05-20%20TIL%20%E2%80%94%20%EC%9D%B4%EC%B0%A8%EB%B3%B4%EC%A0%84%20%ED%99%94%EB%A9%B4%20%EC%97%91%EC%85%80%20%25%20%EB%B6%80%ED%92%80%EB%A6%BC%20%ED%95%B4%EA%B2%B0%2C%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%EC%85%80%EB%B3%84%20%EC%B2%A8%EB%B6%80%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C%2C%20%EB%8F%99%EC%9D%BC%20%EA%B8%B0%EC%97%85%20%EC%9E%90%EB%8F%99%20%EB%B3%B5%EC%82%AC%20%EB%A1%9C%EC%A7%81%20%EC%84%A4%EA%B3%84.md) |
 | 2026-05-21 | 2026-05-21 TIL — 이차보전 화면 엑셀 % 부풀림 해결, 그리드 셀별 첨부파일 업로드, 행추가 동일 기업 자동 복사 로직, 도움말 아이콘 핸들러 주석 정리 | [📄 보기](https://github.com/kmc77/withinfo/blob/89ed339084e51a78c0e5e87589d39c3a21e94abe/TIL/2026/05/2026-05-21%20TIL%20%E2%80%94%20%EC%9D%B4%EC%B0%A8%EB%B3%B4%EC%A0%84%20%ED%99%94%EB%A9%B4%20%EC%97%91%EC%85%80%20%25%20%EB%B6%80%ED%92%80%EB%A6%BC%20%ED%95%B4%EA%B2%B0%2C%20%EA%B7%B8%EB%A6%AC%EB%93%9C%20%EC%85%80%EB%B3%84%20%EC%B2%A8%EB%B6%80%ED%8C%8C%EC%9D%BC%20%EC%97%85%EB%A1%9C%EB%93%9C%2C%20%ED%96%89%EC%B6%94%EA%B0%80%20%EB%8F%99%EC%9D%BC%20%EA%B8%B0%EC%97%85%20%EC%9E%90%EB%8F%99%20%EB%B3%B5%EC%82%AC%20%EB%A1%9C%EC%A7%81%2C%20%EB%8F%84%EC%9B%80%EB%A7%90%20%EC%95%84%EC%9D%B4%EC%BD%98%20%ED%95%B8%EB%93%A4%EB%9F%AC%20%EC%A3%BC%EC%84%9D%20%EC%A0%95%EB%A6%AC.md) |
+| 2026-05-26 | 2026-05-26 대출이자 지원사업 행추가 동일기업 복사 및 파일버튼 readOnly 클릭차단 | [📄 보기](https://github.com/kmc77/withinfo/blob/fee6e78ed46dff2d204ffd0f4e74731fade97083/TIL/2026/05/2026-05-26%20%EB%8C%80%EC%B6%9C%EC%9D%B4%EC%9E%90%20%EC%A7%80%EC%9B%90%EC%82%AC%EC%97%85%20%ED%96%89%EC%B6%94%EA%B0%80%20%EB%8F%99%EC%9D%BC%EA%B8%B0%EC%97%85%20%EB%B3%B5%EC%82%AC%20%EB%B0%8F%20%ED%8C%8C%EC%9D%BC%EB%B2%84%ED%8A%BC%20readOnly%20%ED%81%B4%EB%A6%AD%EC%B0%A8%EB%8B%A8.md) |
 
 
 
@@ -100,6 +101,8 @@ TIL
         └── 2026-05-18 TIL — Repricing 서버단 Observation Date 계산 및 저장쿼리 디버깅.md
         └── 2026-05-19 TIL — selectCrtrInrt 입출력 착각 회고 · 작은 그리드 퍼블 · 엑셀 % 컬럼 부풀림.md
         └── 2026-05-20 TIL — 이차보전 화면 엑셀 % 부풀림 해결, 그리드 셀별 첨부파일 업로드, 동일 기업 자동 복사 로직 설계.md
+        └── 2026-05-21 TIL — 이차보전 화면 엑셀 % 부풀림 해결, 그리드 셀별 첨부파일 업로드, 행추가 동일 기업 자동 복사 로직, 도움말 아이콘 핸들러 주석 정리
+        └── 2026-05-26 대출이자 지원사업 행추가 동일기업 복사 및 파일버튼 readOnly 클릭차단
 
 
 
